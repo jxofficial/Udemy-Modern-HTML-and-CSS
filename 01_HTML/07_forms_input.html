@@ -1,0 +1,60 @@
+<!--Use Control + D to highlight and refactor-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms and input</title>
+</head>
+<body>
+  <form action="process.php">
+    <div>
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="phpFormNameVariable" value="John Doe">
+    </div>
+    <div>
+      <label for="email">Email</label><br> 
+      <input type="email" name="phpFormVariableEmail" id="email" placeholder="Enter email">
+    </div>
+    <div>
+      <label for="message">Message</label><br>
+      <textarea name="phpFormMessage" id="message" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+      <label for="gender">Gender</label>
+      <select name="phpFormGender" id="gender">    
+        <option value="male" selected>Male</option> 
+        <option value="female">Female</option>
+      </select>
+    </div>
+    <div>
+      <label for="age">Age</label><br>
+      <input type="number" name="phpFormAge" id="age">
+    </div>
+    <div>
+      <label for="birthdate">DOB</label><br>
+      <input type="date" name="phpFormDate" id="birthdate"> 
+    </div>
+    <div>
+      <label for="membership">Membership</label><br>
+      <input type="radio" name="phpFormMembership" id="membership" value="basic"> Basic Package
+      <input type="radio" name="phpFormMembership" id="membership" value="intermediate" checked> Intermediate Package
+      <input type="radio" name="phpFormMembership" id="membership" value="advanced"> Advanced Package
+    </div>
+    <div>
+      <label for="mood">Mood: </label>
+      <input type="checkbox" name="phpFormMood" id="mood" value="Happy"> 🙂
+      <input type="checkbox" name="phpFormMood" id="mood" value="Neutral" checked> 😐
+      <input type="checkbox" name="phpFormMood" id="mood" value="Sad"> 😢
+    </div>
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+    <div>
+      
+    </div>
+  </form>
+
+</body>
+</html> 
